@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/txtBookTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book title"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtBookId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book ID"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtBookTitle" />
+
+    <TextView
+        android:id="@+id/txtAuthorId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Author ID"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtBookId" />
+
+    <TextView
+        android:id="@+id/txtPublicDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Publication Date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtAuthorId" />
+
+    <TextView
+        android:id="@+id/txtBookType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtPublicDate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

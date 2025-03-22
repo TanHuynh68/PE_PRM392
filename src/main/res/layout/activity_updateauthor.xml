@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextAuthorName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Author Name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextAuthorEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Author Email"
+        app:layout_constraintTop_toBottomOf="@id/editTextAuthorName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextAuthorPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Author Phone"
+        app:layout_constraintTop_toBottomOf="@id/editTextAuthorEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextAuthorAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Author Address"
+        app:layout_constraintTop_toBottomOf="@id/editTextAuthorPhone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <Button
+        android:id="@+id/buttonUpdateAuthor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Update Author"
+        app:layout_constraintTop_toBottomOf="@id/editTextAuthorAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        app:layout_constraintTop_toBottomOf="@id/buttonUpdateAuthor"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
